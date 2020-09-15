@@ -23,7 +23,9 @@ Pasos a seguir:
 
 4. Complete los ejercicios creando un proyecto C# de consola de nombre-> NombreApellido_TAREA5_Funciones.
 
-![Ejemplo_Proyecto](http://satela.com.ar/capacitacion/EDDatos/Ejemplo_proyecto.png) 
+![Ejemplo_Proyecto](http://satela.com.ar/capacitacion/EDDatos/Ejemplo_proyecto1.png) 
+
+![Ejemplo_Proyecto](http://satela.com.ar/capacitacion/EDDatos/Ejemplo_proyecto2.png) 
 
 5. Haga el commit solo de su archivo .cs
 
