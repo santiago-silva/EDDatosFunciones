@@ -11,6 +11,7 @@ Pasos a seguir:
 3. Haga el clone en su PC.
 
 4. Complete los ejercicios creando un proyecto C# de consola de nombre-> NombreApellido_TAREA5_Funciones.
+   Ejemplo-> ![Ejemplo_Proyecto](http://satela.com.ar/capacitacion/EDDatos/Ejemplo_proyecto.png) 
 
 5. Haga el commit solo de su archivo .cs
 
