@@ -8,7 +8,7 @@ Pasos a seguir:
   
 2. Realice un fork de este repo desde su cuenta de github.
 
-![Ejemplo_FORK]http://satela.com.ar/capacitacion/EDDatos/1Fork.png)
+![Ejemplo_FORK](http://satela.com.ar/capacitacion/EDDatos/1Fork.png)
 
 3. Haga el clone en su PC.
 
