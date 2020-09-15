@@ -8,10 +8,13 @@ Pasos a seguir:
   
 2. Realice un fork de este repo desde su cuenta de github.
 
+![Ejemplo_FORK]http://satela.com.ar/capacitacion/EDDatos/1Fork.png)
+
 3. Haga el clone en su PC.
 
 4. Complete los ejercicios creando un proyecto C# de consola de nombre-> NombreApellido_TAREA5_Funciones.
-   Ejemplo-> ![Ejemplo_Proyecto](http://satela.com.ar/capacitacion/EDDatos/Ejemplo_proyecto.png) 
+
+![Ejemplo_Proyecto](http://satela.com.ar/capacitacion/EDDatos/Ejemplo_proyecto.png) 
 
 5. Haga el commit solo de su archivo .cs
 
