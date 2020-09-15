@@ -27,11 +27,23 @@ Pasos a seguir:
 
 ![Ejemplo_Proyecto](http://satela.com.ar/capacitacion/EDDatos/Ejemplo_proyecto2.png) 
 
-5. Haga el commit solo de su archivo .cs
+5. Haga el commit sólo de su archivo Program.cs
+
+![Ejemplo_add](http://satela.com.ar/capacitacion/EDDatos/git_1.png) 
+
+![Ejemplo_commit](http://satela.com.ar/capacitacion/EDDatos/git_2.png) 
 
 6. Realice el push a su repo.
 
-7. Desde su repo realice en pull request  a este repo.
+![Ejemplo_Push1](http://satela.com.ar/capacitacion/EDDatos/push_1.png) 
+
+![Ejemplo_Push_Verification](http://satela.com.ar/capacitacion/EDDatos/push_2.png) 
+
+7. Desde su repo realice en pull request al repo del IFTS.
+
+http://satela.com.ar/capacitacion/EDDatos/pull_request_1.png
+
+http://satela.com.ar/capacitacion/EDDatos/pull_request_2.png
 
 8 . Subir a ClassRoom un archivo WORD con el código de cada ejercicio, nombre del archivo: NombreApellido_TAREA_5.docx
     Ejemplo: http://satela.com.ar/capacitacion/EDDatos/EmanuelOdstrcil_TAREA_5.docx
