@@ -41,9 +41,9 @@ Pasos a seguir:
 
 7. Desde su repo realice en pull request al repo del IFTS.
 
-http://satela.com.ar/capacitacion/EDDatos/pull_request_1.png
+![Ejemplo_Push1](http://satela.com.ar/capacitacion/EDDatos/pull_request_1.png)
 
-http://satela.com.ar/capacitacion/EDDatos/pull_request_2.png
+![Ejemplo_Push1](http://satela.com.ar/capacitacion/EDDatos/pull_request_2.png)
 
 8 . Subir a ClassRoom un archivo WORD con el código de cada ejercicio, nombre del archivo: NombreApellido_TAREA_5.docx
     Ejemplo: http://satela.com.ar/capacitacion/EDDatos/EmanuelOdstrcil_TAREA_5.docx
