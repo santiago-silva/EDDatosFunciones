@@ -10,7 +10,16 @@ Pasos a seguir:
 
 ![Ejemplo_FORK](http://satela.com.ar/capacitacion/EDDatos/1Fork.png)
 
-3. Haga el clone en su PC.
+![Ejemplo_FORK](http://satela.com.ar/capacitacion/EDDatos/2Fork.png)
+
+![Ejemplo_FORK](http://satela.com.ar/capacitacion/EDDatos/3Fork.png)
+
+3. Haga el clone del proyecto en su PC.
+
+![Ejemplo_FORK](http://satela.com.ar/capacitacion/EDDatos/1Clone.png)
+
+![Ejemplo_FORK](http://satela.com.ar/capacitacion/EDDatos/2Clone.png)
+
 
 4. Complete los ejercicios creando un proyecto C# de consola de nombre-> NombreApellido_TAREA5_Funciones.
 
