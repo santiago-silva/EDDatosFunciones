@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Runtime.CompilerServices;
 using System.Text;
 
@@ -11,85 +13,101 @@ namespace SantiagoSilva_TAREA5
     {
         static void Main(string[] args)
         {
-            Boolean ingreso;
-            Program practica = new Program();
+            Console.WriteLine("ingrese un numero entero: ");
+            int entry = int.Parse(Console.ReadLine());
 
-            ingreso = practica.Pilas();
+            int resultado = Program.Signo(entry);
+
+            Console.WriteLine(resultado);
+
+            Console.WriteLine("Ingrese un número: ");
+            int num1 = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Ingrese el segundo número: ");
+            int num2 = int.Parse(Console.ReadLine());
+
+            resultado = Program.Menor(num1, num2);
+            Console.WriteLine(resultado);
             Console.ReadKey();
 
-            ingreso = practica.Colas();
-            Console.ReadKey();
+            Console.WriteLine("Ingrese un número para verificar si es primo: ");
+            int num = int.Parse(Console.ReadLine());
 
-            practica.Lista();
+            Console.WriteLine(Program.EsPrimo(num));
+
+            Program.Dibujo();
             Console.ReadKey();
         }
 
-        public void Lista()
+        /*
+         * La función dibuja "media pirámide" de "*" a medida que avanza en las líneas.
+         * Comienza con la línea 1 y dibuja "*" según la fórmula "(número de línea * 2) -1". Para la primer línea, el valor es 1, por lo que dibuja 6 líneas con un solo "*".
+         * A medida que avanza en el ciclo, avanza el número de línea, por lo que también aumenta la cantidad de "*" (número de línea * 2 - 1). Pero, a su vez, decrece la 
+         * cantidad de líneas que dibuja en 1. En la segunda iteración, en vez de escribir 6 líneas, se escriben 5 (y así de forma consecutiva).
+         * Finalmente se escribe una sola línea con 11 "*" [(6 * 2) -1] = 11.
+         */
+        static void Dibujo()
         {
-            List<String> l = new List<string>();
+            Console.Clear();
 
-            Console.WriteLine("ingrese una frase o nada para salir");
-            String input = Console.ReadLine();
-
-            while (input != "")
+            for (int fila = 1; fila <= 7; fila++)
             {
-                l.Add(input);
+                for (int espacios = 7 - fila; espacios > 0; espacios--)
+                {
+                    Console.Write(" ");
 
-                Console.WriteLine("ingrese una frase o nada para salir");
-                input = Console.ReadLine();
+                    for (int conta = 1; conta < (2 * fila); conta++)
+                    {
+                        Console.Write("*");
+                    }
+                    Console.WriteLine(" ");
+                }
             }
-
-            foreach (String str in l)
-            {
-                Console.WriteLine(str);
-            }
-
         }
 
-        public Boolean Colas()
+        static Boolean EsPrimo(int input)
         {
-            Queue cola = new Queue();
+            int contador = 0;
 
-            for (int i = 0; i < 7; i++)
+            for (int i = 1; i <= input; i++)
             {
-
-                Console.WriteLine("Ingrese un número real de dos decimales");
-                float num = float.Parse(Console.ReadLine());
-
-                cola.Enqueue(num);
+                if (input % i == 0)
+                {
+                    contador++;
+                }
             }
 
-            Console.WriteLine("Cola creada con éxito!");
-
-            for (int i = 0; i < 7; i++)
-            {
-                Console.WriteLine(cola.Dequeue());
-            }
-
-            return true;
+            return contador == 2;
         }
 
-
-        public Boolean Pilas()
+        static int Menor(int num1, int num2)
         {
-            Stack pila = new Stack();
+            int menor;
 
-            for (int i = 0; i < 6; i++)
+            if (num1 < num2)
             {
-                Console.WriteLine("Ingrese un número entero: ");
-                int numero = int.Parse(Console.ReadLine());
-
-                pila.Push(numero);
+                menor = num1;
+            }
+            else
+            {
+                menor = num2;
             }
 
-            Console.WriteLine("Se ha creado la pila con éxito!");
+            return menor;
+        }
 
-            for (int c = 0; c < 6; c++)
+        static int Signo(float num)
+        {
+            if (num == 0)
             {
-                Console.WriteLine(pila.Pop());
+                return 0;
+            } else if (num > 0)
+            {
+                return 1;
+            } else
+            {
+                return -1;
             }
-
-            return true;
         }
     }
 }
