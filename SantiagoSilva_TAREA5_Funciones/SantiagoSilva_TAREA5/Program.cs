@@ -20,29 +20,30 @@ namespace SantiagoSilva_TAREA5
             ingreso = practica.Colas();
             Console.ReadKey();
 
-            practica.Colas2();
+            practica.Lista();
             Console.ReadKey();
         }
 
-        public void Colas2()
+        public void Lista()
         {
-            Queue cola = new Queue();
+            List<String> l = new List<string>();
 
             Console.WriteLine("ingrese una frase o nada para salir");
             String input = Console.ReadLine();
 
             while (input != "")
             {
-                cola.Enqueue(input);
+                l.Add(input);
 
                 Console.WriteLine("ingrese una frase o nada para salir");
                 input = Console.ReadLine();
             }
 
-            foreach (Object obj in cola)
+            foreach (String str in l)
             {
-                Console.WriteLine(obj);
+                Console.WriteLine(str);
             }
+
         }
 
         public Boolean Colas()
